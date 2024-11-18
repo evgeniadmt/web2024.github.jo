@@ -68,3 +68,11 @@ section p {
 #about p {
     color: #00838f; 
 }
+
+@front-face {
+    font-family: 'Amiri-Bold';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('C:\Users\ZhED.23.FREE\Desktop') format ('woff2')
+}
