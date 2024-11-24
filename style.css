@@ -1,19 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+.text {
+    color:#300064
+}
+h2 {
+    text-align: center;
+    margin: 0 auto; /* Дополнительное выравнивание по центру */
+}
+a {
+    color:#df2aeb
+}
+ul li {
+    margin-bottom: 10px;
+}
 
+/* Общие стили для навигации */
+nav {
+    background-color: #300064;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.nav-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-flex-item, .nav-flex-item-logo {
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.nav-flex-item a, .nav-flex-item-logo a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+.nav-flex-item a:hover, .nav-flex-item a.active {
+    color: #df2aeb;
+    text-decoration: underline;
+}
+
+.nav-flex-item-logo {
+    margin-right: auto;
+}
+
+.nav-flex-item-logo img {
+    height: 70px;
+    width: auto;
+}
+
+/* Стили для шапки */
 header {
-    background-color: #333; 
-    color: white; 
-    padding: 20px; 
-    text-align: center; 
-
+    background-image: url('images/шап.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    position: relative;
 }
 
-header h1 {
-    margin: 0; 
-    font-size: 36px; 
-    font-weight: bold; 
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
 }
+
+.header-content h1 {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Футер */
 footer {
-    background-color: #333;
+    background-color: #300064;
     color: white;
     text-align: center;
     padding: 10px 0;
@@ -24,55 +97,196 @@ footer {
 footer p {
     margin: 0;
 }
+
 .social-icons {
     display: flex;
-    justify-content: center; 
-    gap: 10px; 
+    justify-content: center;
+    gap: 10px;
 }
 
 .social-icons img {
-    width: 50px; 
-    height: 50px; 
-    object-fit: cover; 
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
 }
+
+/* Основные блоки страницы */
+.block {
+    min-height: 250px;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #eae1f0;
+}
+
+.content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    
+}
+
+/* Блок 1: Заголовок */
+.about-me-content {
+    display: flex;
+    align-items: center;
+}
+
+.text-content {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.about-me-image {
+    max-width: 150px;
+    height: auto;
+    border-radius: 100%;
+}
+
+.image-content {
+    flex: 1;
+    text-align: right;
+}
+
+/* Блок 2: Мои компетенции */
+.flex-row-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.competence {
+    width: 70px;
+    text-align: center;
+    margin: 10px;
+}
+
+.competence-table {
+    width: 100px;
+    border-collapse: collapse;
+}
+
+.competence-table td {
+    padding: 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.competence-logo {
+    max-width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+.competence p {
+    margin-top: 11px;
+    font-size: 15px;
+}
+
+
+
+.block-3 {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #eae1f0;
+    border-radius: 8px;
+}
+
+
+
+.block-3 ul {
+    width: calc(50% - 20px);
+    padding: 0;
+    margin: 0 auto; /* Центрируем список */
+}
+
+.block-3 ul li {
+    padding: 10px;
+    font-size: 18px;
+    color: #300064;
+}
+
+.block-3 ul li:last-child {
+    border-bottom: none; /* Убираем границу у последнего элемента */
+}
+/* Блок 4: Заголовок */
+.block-4 {
+    padding: 0;
+    text-align: center;
+}
+.btn {
+    background-color: #300064; /* Цвет фона */
+    color: white; /* Цвет текста */
+    padding: 15px 32px; /* Отступы внутри кнопки */
+    text-align: center; /* Выравнивание текста */
+    text-decoration: none; /* Убираем подчеркивание */
+    display: inline-block; /* Делаем кнопку блочным элементом */
+    font-size: 16px; /* Размер шрифта */
+    margin: 4px 2px; /* Отступы снаружи кнопки */
+    cursor: pointer; /* Изменяем курсор при наведении */
+    border: none; /* Убираем границу */
+    border-radius: 12px; /* Скругляем углы */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); /* Добавляем тень */
+    transition: background-color 0.3s ease; /* Плавное изменение цвета при наведении */
+}
+
+.btn:hover {
+    background-color:#fd8afd; /* Изменяем цвет фона при наведении */
+}
+
+/* pt-sans-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/pt-sans-v17-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* pt-sans-italic - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'PT Sans';
+    font-style: italic;
+    font-weight: 400;
+    src: url('../fonts/pt-sans-v17-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* pt-sans-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/pt-sans-v17-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
 
 section {
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
-    background-color: #DBE2EF;
-
+    background-color: #eae1f0;
 }
 
 section h2 {
     font-size: 24px;
-    color: #333;
+    color: #300064;
     margin-bottom: 10px;
 }
-
 
 section p {
     font-size: 16px;
     color: #555;
     line-height: 1.5;
+}
 
 #about {
-    background-color: #e0f7fa; 
-    border: 1px solid #80deea; 
+    background-color: #eae1f0;
+    border: 1px solid #eae1f0;
 }
 
 #about h2 {
-    color: #006064; 
+    
+    color: #eae1f0;
 }
 
 #about p {
-    color: #00838f; 
-}
-
-@front-face {
-    font-family: 'Amiri-Bold';
-    font-style: normal;
-    font-weight: 400;
-    src: local(''),
-        url('C:\Users\ZhED.23.FREE\Desktop') format ('woff2')
+    color: #eae1f0;
 }

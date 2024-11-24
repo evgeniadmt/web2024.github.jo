@@ -3,33 +3,115 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Персональный сайт Евгении Журавлевой | Веб-технологии</h1>
+    <header class="header">
+        <div class="header-content">
+            <h1>Персональный сайт Евгении Журавлевой | Веб-технологии</h1>
+        </div>
     </header>
     <nav>
-        <ul>
-            <li><a href="ind.html"><img src="images/лого.jpg" alt="Логотип"></a></li>
-            <li><a href="ind.html">О себе</a></li>
-            <li><a href="pages/summary.html">Резюме</a></li>
-            <li><a href="pages/portfolio.html">Портфолио</a></li>
-            <li><a href="#competencies">Компетенции</a></li>
-            <li><a href="pages/contact.html">Контакты</a></li>
+        <ul class="nav-flex">
+            <li class="nav-flex-item-logo"><a href="ind.html"><img src="images/лог.png" alt="Логотип"></a></li>
+            <li class="nav-flex-item"><a href="ind.html">О себе</a></li>
+            <li class="nav-flex-item"><a href="pages/summary.html">Резюме</a></li>
+            <li class="nav-flex-item"><a href="pages/portfolio.html">Портфолио</a></li>
+            <li class="nav-flex-item"><a href="#competencies">Компетенции</a></li>
+            <li class="nav-flex-item"><a href="pages/contact.html">Контакты</a></li>
         </ul>
     </nav>
     <main>
-        <section id="about">
-            <h2>О себе</h2>
-            <p>Здравствуйте!</p>
-            <p>Я - Журавлева Евгения, студентка 2 курса Государственного Университета "Дубна" Института Системного анализа и управления направления Бизнес-информатика группы 2271</p>
-            <p>Я из маленького города в Тверской области, но это не мешает мне учиться и развиваться в сферах IT и бизнеса.</p>
-            <p>Осваиваю новейшие информационные технологии, работаю с Генеративным Искусственным Интелектом и такими платформами, как: YouGile и GitHub </p>
+        <section class="block block-1">
+            <div class="content-wrapper">
+                <h2>О себе</h2>
+                <div class="about-me-content">
+                    <div class="text-content">
+                        <p class="text">Всем привет!</p>
+                        <p class="text">Я - Женя, студентка <a href="https://www.uni-dubna.ru/" target="_blank"><b>Государственного Университета "Дубна"</b></a>, Института системного анализа и управления. Сейчас учусь на 2 курсе направления Бизнес-информатика.</p>
+                        <p class="text">В свободное от учёбы время люблю читать книги, гулять и узнавать что-то новое.</p>
+                        <p class="text">В будущем вижу себя специалистом, эффективно сочетающим IT и бизнес для инновационных решений.</p>
+                    </div>
+                    <div class="about-me-image">
+                        <img src="images/я.jpg" alt="О себе" class="about-me-image">
+                    </div>
+                </div>
+            </div>
         </section>
+
         
-        <section id="competencies">
-            <h2>Компетенции</h2>
-            <p>Отрисовка процессов и схем: Diagrams(draw.io)</p> 
-            <p>Экранные формы: Figma</p>
-            <p>Инструменты разработки: PyCharm, Visual Studio Code</p>
+        <section id="competencies" class="block flex-row-div">
+            <div class="content-wrapper">
+                <h2>Мои компетенции</h2>
+                <table class="competence-table">
+                    <tr>
+                        <td>
+                            <div class="competence">
+                                <a href="https://www.figma.com/" target="_blank">
+                                    <img src="images/фигма.png" alt="Логотип 1" class="competence-logo">
+                                  </a>
+                                <p class="text"><b>Figma</b></p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="competence">
+                                <a href="https://ru.yougile.com/" target="_blank">
+                                    <img src="images/юдж.png" alt="Логотип 2" class="competence-logo">
+                                </a>
+                                <p class="text"><b>YouGile</b></p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="competence">
+                                <a href="https://www.drawio.com/" target="_blank">
+                                    <img src="images/ди.png" alt="Логотип 3" class="competence-logo">
+                                </a>
+                                <p class="text"><b>Draw.io</b></p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="competence">
+                                <a href="https://code.visualstudio.com/" target="_blank">
+                                    <img src="images/vs.png" alt="Логотип 4" class="competence-logo">
+                                </a>
+                                <p class="text"><b>Visual Studio Code</b></p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="competence">
+                                <a href="https://products.aspose.app/diagram/bpmn" target="_blank">
+                                    <img src="images/sspose.png" alt="Логотип 5" class="competence-logo">
+                                </a>
+                                <p class="text"><b>Диаграммы BPMN</b></p>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section class="block block-3">
+            <div class="content-wrapper">
+                <h2>Услуги</h2>
+                <div class="flex-row-div">
+                    <ul>
+                        <li>Проектирование блок-схем</li>
+                        <li>Разработка игр на языке программирования Python</li>
+                        <li>Визуализация бизнес-процессов с использованием BPM нотаций</li>
+                    </ul>
+                    <ul>
+                        <li>Создание графических изображений с помощью экранных форм</li>
+                        <li>Разработка веб-сайтов с использованием Tilda</li>
+                        <li>Дизайн интерфейсов с помощью Figma</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="block block-4">
+            <div class="content-wrapper">
+                <h2>Мои достижения</h2>
+                <p class="text">Здесь вы можете ознакомиться с моими достижениями</p>
+                <form action="pages/portfolio.html">
+                    <button class="btn">Портфолио</button>
+                </form>
+            </div>
         </section>
     </main>
     <footer>
