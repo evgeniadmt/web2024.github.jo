@@ -22,15 +22,49 @@
     </nav>
 
     <main>
-        <section>
-            <h2><b>Контактная информация</b></h2>
-            <p><b>Адрес:</b></p>
-            <p>141982, МОСКОВСКАЯ ОБЛАСТЬ, Г. ДУБНА, УЛ. УНИВЕРСИТЕТСКАЯ, Д. 19</p>
-            <p><b>Контактный телефон:</b></p>
-            <p>+79622453314</p>
-            <p><b>Почта:</b></p>
-            <p>zhuravleeva.evgenia@gmail.com</p>
-        </section>
+        
+        <h1 class ="h1-cont">Контакты</h1>
+        <div class="contact-info">
+            <div class="contact-block">
+                <h2>Я в соцсетях</h2>
+                <div class= "social-icons">
+                    <a href="https://t.me/evgenia_zhuravleva" target="blank"><img src="../images/картинка 1.png" alt="Соцсеть 1"></a>
+                    <a href="https://github.com/evgeniadmt" target="blank"><img src="../images/картинка 3.png" alt="Соцсеть 2"></a>
+                    <a href="https://vk.com/evgeni_a" target="blank"><img src="../images/картинка 2.png" alt="Соцсеть 1">
+                </div>
+            </div>
+            <div class="contact-block">
+                <h2>Почта</h2>
+                <a href="mailto:zhuravleeva.evgenia@gmail.com"><i class="fas fa-envelope"></i> zhuravleeva.evgenia@gmail.com</a>
+            </div>
+            <div class="contact-block">
+                <h2>Телефон</h2>
+                <a href="tel:+79622453314"><i class="fas fa-phone"></i> +7 (962) 245-33-14</a>
+            </div>
+        </div>
+        <div>
+            <form action="#" method="post">
+                <div class="input-group">
+                    <label for="name">Имя:</label>
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="name" name="name" required>
+                </div>
+    
+                <div class="input-group">
+                    <label for="email">Почта:</label>
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" id="email" name="email" required>
+                </div>
+    
+                <div class="input-group">
+                    <label for="message">Сообщение:</label>
+                    <i class="fas fa-comment"></i>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+    
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
     </main>
 
     <footer>

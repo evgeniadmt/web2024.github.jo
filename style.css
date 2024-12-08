@@ -95,19 +95,20 @@ footer {
     background-color: #300064;
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px;
+    margin-top: 40px;
     width: 100%;
     bottom: 0;
 }
 
 footer p {
-    margin: 0;
+    margin: 10px;
 }
 
 .social-icons {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
 }
 
 .social-icons img {
@@ -372,4 +373,100 @@ section p {
 }
 .achievement:nth-child(even) .image-block {
     order: 1;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #eae1f0;
+    box-shadow: 0 0 10px #eae1f0;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-top: 10px;
+    width: 100%;
+    text-align: left;
+}
+
+.input-group {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+.input-group i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #300064;
+}
+
+input, textarea {
+    padding: 10px 10px 10px 30px;
+    margin-top: 5px;
+    border: 1px solid #300064;
+    border-radius: 4px;
+    width: 100%;
+}
+
+button {
+    background-color: #300064; /* Цвет фона */
+    color: white; /* Цвет текста */
+    padding: 10px 20px; /* Уменьшаем отступы внутри кнопки */
+    text-align: center; /* Выравнивание текста */
+    text-decoration: none; /* Убираем подчеркивание */
+    display: inline-block; /* Делаем кнопку блочным элементом */
+    font-size: 16px; /* Размер шрифта */
+    margin-top: 20px; /* Отступ сверху */
+    cursor: pointer; /* Изменяем курсор при наведении */
+    border: none; /* Убираем границу */
+    border-radius: 12px; /* Скругляем углы */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); /* Добавляем тень */
+    transition: background-color 0.3s ease; /* Плавное изменение цвета при наведении */
+}
+
+button:hover {
+    background-color: #df2aeb;
+}
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    color: #300064;
+}
+.h1-cont {
+    color: #300064;
+}
+.contact-block {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    background-color: #eae1f0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #eae1f0;
+    margin: 0 10px;
+}
+
+.contact-block h2 {
+    margin-bottom: 20px;
+}
+
+.contact-block a {
+    color: #300064;
+    text-decoration: none;
+}
+
+.contact-block a:hover {
+    text-decoration: underline;
 }
